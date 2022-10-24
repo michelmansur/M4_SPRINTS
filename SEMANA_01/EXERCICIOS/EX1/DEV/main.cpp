@@ -4,8 +4,26 @@
 // 1 -  Faça uma função que recebe uma certa medida e ajusta ela percentualmente 
 // entre dois valores mínimo e máximo e retorna esse valor
 
+// COMENTARIOS PARA O PROFESSOR ANDRE: Nessa questão, recebeu um valor, e multiplicando por 100, o valor foi ajustado percentualmente.
+
+int ConverterOValor(int valorinteiro, int valorminimo, int valormaximo) {
+  return int((valorinteiro - valorminimo) * 100) / (valormaximo - valorminimo);
+}
+
+
 // 2 - Faça uma função que simule a leitura de um sensor lendo o 
 // valor do teclado ao final a função retorna este valor
+
+// COMENTARIOS PARA O PROFESSOR ANDRE: Nessa questão, declarei o int (numero inteiro) como a leitura do sensor, que le o valor do teclado ate o final, e retorna esse mesmo valor,
+//que foi exatamente o que a questão pediu.
+
+
+int LeituraDoSensor() {
+	int valoraleatorio;
+	cin >> valoraleatorio;
+	
+	return valoraleatorio;
+}
 
 // 3 - Faça uma função que armazena uma medida inteira qualquer 
 // em um vetor fornecido. Note que como C não possui vetores 
@@ -27,6 +45,26 @@
 
 // 5 - Faça uma função que pergunta ao usuário se ele deseja continuar o mapeamento e 
 // retorna verdadeiro ou falso
+ 
+ 
+ //COMENTARIOS PARA O PROFESSOR ANDRE: Nessa questão, printei uma pergunta se deseja continuar o mapeamento, 
+ //caso a resposta fosse sim, iria retornar um "True", caso contrario, um "False"
+
+bool leComando(){
+   char RESPONDA;
+   print("O usuário deseja continuar com o mapeamento? (Caso for sim, pressione S/Caso for não, preccione N)");
+   cin >> RESPONDA;
+   
+   
+  if (continuar com o mapeamento == 'Caso for sim, pressione S')
+  {
+    return true;
+  } else
+  {
+    return false;
+  }
+}
+
 
 
 // 6 - A função abaixo (que está incompleta) vai "dirigindo" virtualmente um robô 
