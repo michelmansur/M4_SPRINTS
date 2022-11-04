@@ -24,7 +24,7 @@ void setup() {
   pinMode(SomIrritante, OUTPUT);
 }
 void loop() {
-  salvarcoisa1 = digitalRead(botao2);
+  salvarcoisa1 = digitalRead(botao1);
   if (salvarcoisa1 == LOW){
     LuzRight_ = converter(analogRead(4),64,4063);
     Serial.println(LuzRight_);
